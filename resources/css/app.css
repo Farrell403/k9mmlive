@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accordion-heading:has(+ .accordion-body:not(.hidden)) button {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+}
+
+:root {
+    --primary-color: #f00;
+    --secondary-color: #000;
+}
+
+html[lang="my"] * {
+    /*font-family: 'Noto Sans Myanmar', sans-serif !important;*/
+
+    nav {
+        .font-bebas {
+            font-weight: 700;
+        }
+    }
+
+    .text-xl {
+        font-size: 14px;
+    }
+
+    .text-6xl {
+        font-size: 30px;
+    }
+
+    .text-2xl {
+        font-size: 16px;
+    }
+
+    .banner {
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+
+.video-js-responsive-container .video-js {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-js-responsive-container .vjs-big-play-button {
+    left: calc(50% - 45px);
+    top: calc(50% - 22px);
+}
+
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.w-457 {
+    width: 457px;
+}
+
+.w-122 {
+    width: 122px;
+}
+
+.bg-red {
+    background-color: #ff0b0b;
+}
+
+#footer .fill-black {
+    fill: #fff !important;
+}
+
+.live-chat-iframe {
+    width: 100%;
+}
